@@ -1,14 +1,6 @@
 <div class="cars_main">
   <div class="cars_sub_main">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="car">
-            <app-car [car]="cars[counter]"></app-car>
-          </div>
-        </div>
-      </div>
-    </div>
+      <app-car [car]="cars[counter]"></app-car>
   </div>
   <div class="buttons">
     <button type="button" class="btn btn-outline-light btn-lg" (click)="showPreviousCar()">< Show Previous Car</button>

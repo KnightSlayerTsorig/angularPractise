@@ -12,19 +12,21 @@ export class CarsComponent {
 
   cars: ICar[] = cars;
   counter = 0;
-  showNextCar(): number{
+
+  showNextCar(): number {
+    // метод для прокрутки "каруселі" вправо
     if (this.counter < cars.length - 1) {
       return this.counter += 1;
-    }
-    else {
+    } else {
       return this.counter = 0;
     }
   }
-  showPreviousCar(): number{
+
+  showPreviousCar(): number {
+    // метод для прокрутки "каруселі" вліво
     if (this.counter <= cars.length - 1 && this.counter >= 1) {
       return this.counter -= 1;
-    }
-    else if (this.counter === 0) {
+    } else if (this.counter === 0) {
       return this.counter = cars.length - 1;
     }
   }
