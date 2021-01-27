@@ -1,27 +1,6 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">Tsorig Angular Practice</h5>
-  <nav class="my-2 my-md-0 mr-md-3">
-    <a [routerLink]="['cars']" class="p-2 text-dark">Cars</a>
-    <a [routerLink]="['users']" class="p-2 text-dark">Users</a>
-  </nav>
-  <a class="btn btn-outline-primary" href="#">Sign up</a>
-</div>
-
+<ul>
+  <li><a [routerLink]="['users']">user</a></li>
+  <li><a [routerLink]="['posts']">posts</a></li>
+</ul>
 
 <router-outlet></router-outlet>
-
-
-<div class="divider"></div>
-<footer>
-    <div>
-        <h2>You can contact with me via this links:</h2>
-    </div>
-    <div class="icons">
-        <a href="https://t.me/KnightSlayerTsorig" target="_blank"><i class="fa fa-telegram fa-2x"></i></a>
-        <a href="https://www.instagram.com/modest.megalomaniac/" target="_blank"><i
-                class="fa fa-instagram fa-2x"></i></a>
-        <a href="https://github.com/KnightSlayerTsorig" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-        <a href="" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-    </div>
-    <div>&copy; 2021 Tsorig Inc.</div>
-</footer>

@@ -11,8 +11,6 @@ export class UserComponent implements OnInit {
   @Input()
   user: IUser;
 
-  email = false;
-  phone = false;
 
   constructor() {
   }
@@ -20,11 +18,5 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showUserEmail(): boolean {
-    return this.email = !this.email;
-  }
 
-  showUserPhone(): boolean {
-    return this.phone = !this.phone;
-  }
 }
