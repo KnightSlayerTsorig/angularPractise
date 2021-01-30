@@ -1,0 +1,8 @@
+<div>
+  ID: {{post.id}}
+  Title: {{post.title}}
+  <div *ngIf="postBody">
+    {{post.body}}
+  </div>
+  <button (click)="postShowBody()" [routerLink]="post.id">Show Body</button>
+</div>
